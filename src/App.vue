@@ -4,9 +4,10 @@
     <button v-on:click="importIngredients">
       Import Ingredients
     </button>
-    <a>
-      View Recipes
-    </a>
+    <nav>
+      <router-link :to="/">Home</router-link>
+      <router-link :to="/recipes">View Recipes</router-link>
+    </nav>
     <router-view></router-view>
   </div>
 </template>
