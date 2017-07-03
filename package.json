@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "express": "^4.15.2",
+    "vue-server-renderer": "^2.3.4",
     "vue": "^2.3.3"
   },
   "repository": {
