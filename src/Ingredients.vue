@@ -16,6 +16,7 @@ export default {
   },
   watch: {
     '$route' (to, from) {
+    //not working
         alert("load ingrs");
     }
   },
