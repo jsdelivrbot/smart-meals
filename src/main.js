@@ -2,19 +2,24 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from './App.vue'
 import Home from './Home.vue'
-import RecipeList from './RecipeList.vue'
+import Recipes from './Recipes.vue'
+import Ingredients from './Ingredients.vue'
 
 
 Vue.use(Router);
 
 const routes = [
 	{
-		path: "/recipes",
-		component: RecipeList
-	},
-	{
 		path: "/",
 		component: Home
+	},
+	{
+		path: "/recipes",
+		component: Recipes
+	},
+	{
+		path: "/ingredients",
+		component: Ingredients
 	}
 ];
 

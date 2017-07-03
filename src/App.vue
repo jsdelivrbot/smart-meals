@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <h1>Smart Meals</h1>
-    <button v-on:click="importIngredients">
-      Import Ingredients
-    </button>
+    
     <nav>
       <router-link to="/">Home</router-link>
+      <router-link to="/ingredients">View Ingredients</router-link>
       <router-link to="/recipes">View Recipes</router-link>
     </nav>
     <router-view></router-view>
