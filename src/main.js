@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import App from './App.vue'
+import Home from './Home.vue'
+import RecipeList from './RecipeList.vue'
+
 
 Vue.use(Router);
 
@@ -16,7 +19,8 @@ const routes = [
 ];
 
 const router = new Router({
-	routes: routes
+	routes: routes,
+	mode: history
 });
 
 new Vue({
