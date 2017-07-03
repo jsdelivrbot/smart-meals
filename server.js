@@ -61,7 +61,8 @@ var seedData = [
 var uri = 'mongodb://heroku_shh0z613:3don47kmesrpocbveveq0dr6sj@ds145892.mlab.com:45892/heroku_shh0z613';
 
 mongodb.MongoClient.connect(uri, function(err, db) {
-  
+  console.log(err);
+  console.log(db);
   if(err) throw err;
   
   /*
