@@ -5,8 +5,8 @@
       Import Ingredients
     </button>
     <nav>
-      <router-link :to="/">Home</router-link>
-      <router-link :to="/recipes">View Recipes</router-link>
+      <router-link to="/">Home</router-link>
+      <router-link to="/recipes">View Recipes</router-link>
     </nav>
     <router-view></router-view>
   </div>
