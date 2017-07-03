@@ -1,13 +1,27 @@
 import Vue from 'vue'
+import Router from 'vue-router'
 import App from './App.vue'
 
-new Vue({
-  el: '#app',
-  
-})
+Vue.use(Router);
+
+const routes = [
+	{
+		path: "/recipes",
+		component: RecipeList
+	},
+	{
+		path: "/",
+		component: Home
+	}
+];
+
+const router = new Router({
+	routes: routes
+});
 
 new Vue({
 	el: '#app',
+	router: router,
 	render: h => h(App),
     data: {
 	  	test: {},

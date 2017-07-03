@@ -1,8 +1,13 @@
 <template>
   <div id="app">
+    <h1>Smart Meals</h1>
     <button v-on:click="importIngredients">
       Import Ingredients
     </button>
+    <a>
+      View Recipes
+    </a>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,6 +20,7 @@ export default {
   },
   methods: {
     importIngredients() {
+      // make call to /import
       var servings = localStorage.getItem("ingredient_nutrition"); 
       alert(0);
       alert(servings);
