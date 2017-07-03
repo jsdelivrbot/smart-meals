@@ -16,6 +16,7 @@ export default {
   methods: {
     importIngredients() {
       var servings = localStorage.getItem("ingredient_nutrition"); 
+      alert(0);
       alert(servings);
     }
   }
