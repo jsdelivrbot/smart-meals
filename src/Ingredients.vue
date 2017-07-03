@@ -1,8 +1,10 @@
 <template>
+<div>
   <h2>ingredients</h2>
   <button v-on:click="importIngredients">
     Import Ingredients
   </button>
+  </div>
 </template>
 
 <script>
