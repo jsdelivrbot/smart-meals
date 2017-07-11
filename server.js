@@ -28,8 +28,7 @@ app.get('*', (req, res) => {
     .pipe(res);
 });
 
-// Bind the app to this port.
-app.listen(process.env.PORT || 8080);
+
 
 var mongodb = require('mongodb');
 
@@ -64,6 +63,10 @@ mongodb.MongoClient.connect(uri, function(err, db) {
   console.log(err);
   console.log(db);
   if(err) throw err;
+  // Bind the app to this port.
+  app.listen(process.env.PORT || 8080, function() {
+    
+  });
   
   /*
    * First we'll add a few songs. Nothing is required to create the 
